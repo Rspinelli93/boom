@@ -1,13 +1,52 @@
+html {
+  height: 75%;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  height: 100%;
 }
 
-h1 {
+h1{
   color: #333;
 }
+
+
+#restart {
+  background-color: #1787ffdd; 
+  color: white; 
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#restart:hover {
+  background-color: #0056b3; 
+}
+
+#result {
+  font-size: 19px;
+  font-weight: bolder;
+  color: rgb(65, 65, 65)
+}
+
+#countdown {
+  color:#e74c3c;
+}
+
 #result .green {
   color: #2ecc71;
 }
