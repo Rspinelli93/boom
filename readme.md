@@ -1,31 +1,27 @@
-# Bomba Game
+# Boom · Countdown game
 
-## Descripción
-El juego genera un número aleatorio del 1 al 3 y presenta una cuenta atrás de 5 segundos. Después de la cuenta atrás, compara el número aleatorio con el número introducido por el usuario. Si coinciden, se muestra un mensaje de "¡Has salvado el mundo!", de lo contrario, se muestra "La bomba ha estallado". En ambos casos tendrá que salir el núemro elegido y junto con el número correcto (el generado aleatoriamente). No se sabrá que número es hasta que pasen 5 segundos.
+A number-guessing browser game built around promises, a delayed random result, and a visible countdown. The player chooses a number from 1 to 3 and compares it with the computer’s choice.
 
-## Instrucciones
+**Collection:** Browser projects · [Project directory](https://github.com/Rspinelli93/Rspinelli93/blob/main/PROJECTS.md)
 
-1. Abre el archivo `index.html` en tu navegador.
-2. Introduce un número del 1 al 3 en el campo de entrada.
-3. El juego se iniciará automáticamente con una cuenta atrás de 5 segundos.
-4. Después de la cuenta atrás, el juego evaluará el número introducido.
-5. Se mostrará un mensaje indicando si has salvado el mundo o si la bomba ha estallado.
+## Run locally
 
-## Reiniciar el Juego
+Serve the repository with a local static HTTP server, for example using Python 3:
 
-Puedes reiniciar el juego en cualquier momento haciendo clic en el botón "Reiniciar Juego". Esto comenzará una nueva cuenta atrás y permitirá que ingreses otro número.
+```bash
+git clone https://github.com/Rspinelli93/boom.git
+cd boom
+python3 -m http.server 8000
+```
 
-## Estilos
+Open `http://localhost:8000`. No build step is required.
 
-Los estilos del juego están definidos en el archivo `styles.css`. Puedes personalizar estos estilos según tus preferencias.
+## Repository guide
 
-Debe quedar algo similar a esto
-![boom](./img/boom.png)
+- [`css/`](css/)
+- [`index.html`](index.html)
+- [`js/`](js/)
 
+---
 
-
-## Pistas
-- Puedes usar `setTimeout()` para generar la asincronía de 5 segundos
-- Puedes usar `setInterval()` para generar el contador de 5 segundos (recuerda que es del 5 al 0, por tanto el intervalo debería ser uno más) 5, 4, 3, 2, 1, 0 ...
-- Usa promesas para una vez pasado ese tiempo devuelva el resultado y puedas trabajar con él
-- Crea un botón de reinicio del juego voviendo a iniciar la función inicial o reiniciando la página al pulsarlo.
+[Back to my GitHub profile](https://github.com/Rspinelli93)
